@@ -74,7 +74,35 @@ padding: 12px;
     on referenced classes. It allows you to isolate the module, so if anything goes wrong, then it is the module’s or classes’ fault, not that of the coupled classes. <br>
     Using mocks for API tests and to turn anything that is non-deterministic to a deterministic value <br> 
     </p>
-
+    <p style="color: rgb(0, 34, 255);">Relational Database</p>
+    <p>
+    The choice of Relational Database for these projects is PostgreSQL. <br>
+    Database tables consist of:<br>
+    - columns: attributes of a row<br>
+    - row: singular object like structure that houses varius data<br>
+    Also tables can be linked to each other using a special column called keys, hence the name relational<br>
+    Each tabe has a primary key that PostgreSQL assigns. A table can reference another table by storing the other's primary key in a column in what is known as 'foreign key'<br>
+    <br>
+    Seeds are initial sets of data which can be used to populate a database and its tables<br>
+    <br>
+    Querying data syntax:<br>
+    SELECT [list of columns] FROM [table_name];<br>
+    <br>
+    Updating a value:<br>
+    UPDATE [table_name] SET [column_name] = [new_value];<br>
+    <br>
+    Deleting a specific rows that match a certain condition <br>
+    DELETE FROM [table_name] WHERE [conditions];<br>
+    <br>
+    Adding new row<br>
+    INSERT INTO [table_name]<br>
+      ( [list of columns] )<br>
+    VALUES( [list of values] );<br> 
+    <br>
+    To turn the data obtained from PostgreSQL, use a ‘Model’ and ‘Repository’ classes (sometimes called ORM). 
+    Model class will hold a record’s data, for example, an attribute for each column.
+    A repository class holds methods to run SQL queries on the database to retrieve, create, update or delete data.
+    </p>
 
 
 
