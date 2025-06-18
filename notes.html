@@ -102,8 +102,19 @@ padding: 12px;
     To turn the data obtained from PostgreSQL, use a ‘Model’ and ‘Repository’ classes (sometimes called ORM). 
     Model class will hold a record’s data, for example, an attribute for each column.
     A repository class holds methods to run SQL queries on the database to retrieve, create, update or delete data.
+    <br><br>
+    A schema is useful for designing tables and their properties.<br><br>
+    Relationship in tables:<br>
+    - one to many <br>
+    - many to many <br><br>
+    In one-to-many, the many has the foreign key that links to the one table<br>
+    A JOIN query is used to retrieve data from more than one table. Without using this process it would take twice as many queries and make program/database slow.<br><br>
+    SELECT [columns to select]
+    FROM [table name]
+    JOIN [other table name]
+    ON [join condition]<br><br>
     </p>
-
+    
 
 
     </div>
