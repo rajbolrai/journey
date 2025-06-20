@@ -18,30 +18,13 @@ padding: 12px;
 </style>
 <head>
 <title> Notes</title></titl></title>
+<script src="research_graphics.js" type="module"></script>
 </head>
 
 <body>
 
 
-<canvas id="myCanvas" width="200" height="100"></canvas>
-
-<script>
-const canvas = document.getElementById("myCanvas");
-
-// Initialize the GL context
-const gl = canvas.getContext("webgl");
-
-// Only continue if WebGL is available
-if (!gl) {
-  alert("Your browser does not support WebGL.");
-}
-
-// Set color buffer to red (1,0,0) and opaque (1)
-gl.clearColor(1, 0, 0, 1);
-
-//Set the color with the color buffer
-gl.clear(gl.COLOR_BUFFER_BIT);
-</script>
+<canvas id="gl-canvas" width="640" height="400"></canvas>
 
 <section">
     
