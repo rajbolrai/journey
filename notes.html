@@ -15,6 +15,13 @@ padding: 12px;
   font-size: 15px;
   text-align: center;
 }
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 </style>
 <head>
 <title> Notes</title></titl></title>
@@ -123,9 +130,43 @@ padding: 12px;
     JOIN [join table] ON [join condition]<br>
     JOIN [other table] ON [join condition]<br>
     WHERE [condition]<br><br>
+    </p>
+    <p style="color: rgb(0, 34, 255);">Web Application</p>
+    <input type="image" src="mvc-diagram.png" alt="mvc" class="center" width="1100" height="500">
+    <p>It is essential to understand the distinction between client and server. <br>
+    Client is a software that connects to the server to obtain data or input data in some capacity. 
+    The server is essentially another computer that has connection with the database and can run operations 
+    that the user has requested from their client machine.<br><br>
+    HTTP<br>
+    Hyper Text Transfer Protocol is a language used to help connect clients to the their specified server on the internet (network).
+    HTTP acts as the roadman creating a path between the client to the server so that they can communicate with each other.<br>
+    The request and reponse cycle refer to how the client and server interaction procedes.<br><br> 
+
+    There is 4 main HTTP Request methods:<br>
+
+    - Post: creating/uploading data to the server’s database<br>
+    - Get: read data, specify what to get <br>
+    - Put: updating database entries <br>
+    - Delete: removing database entries<br><br>
+
+    The typical request line includes the method, path and HTTP version and headers provide extra infromation about the request.<br>
+    The typical response from the server is made up of a status code indicating how the request went and a body which is the content returned.<br><br>
+
+
+    MVC:<br>
+    - Model: it models the how data is handled, structured and viewed<br>
+    - Controller: part of the application that handles user request and provide appropriate responses for the client.<br>
+    - View: it controls how the response is structured and represented to the user<br><br>
+
+    Testing MVC:<br>
+
+    1. Database integreations Tests for data repository classes to ensure database functions is correctly implemented<br>
+    2. Unit tests the model class to check things are structered correctly<br><br>
+
+    Feature Tests:<br>
+    Test the whole MVC from the client's perspective.<br>  
 
     </p>
-    
 
 
     </div>
