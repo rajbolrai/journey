@@ -254,6 +254,30 @@ padding: 12px;
 
 </div>
 
+<div class="container"> 
+
+<p>Controller:<br>
+It is the component that controls the HTTP requests and provides aquedate respones to the client. It has access to the database.<br><br>
+View:<br>
+The view is what is returned to the client and what they see in their client program. It handles the data presentation and is dynanimcally rendered. What the user
+sees in a browser essentially and it is sent back to the user.<br><br>
+
+Model: <br>
+it handles data logic and interacts with the database. Model repositories and model class.
+</p> 
+Flyway: data migration tool used to manage and verision control database schema. Keep track of all the changes to the 
+database.<br>
+Drop flyway database for the remove verision error with database migration<br><br>
+
+
+Session based Authentication: <br>
+A token is created when a user successfully authenticated. The token contains the expiry date, userID and sessionID.
+The userID is used to retrieve user details from the database. <br>The sessionID returned to the browser. The browser 
+then includes SessionID in the header of every subsequent requests.<br> It is the server’s job to check if the sessionID is valid if it is then 
+it will return pages or do action that would require authentication and send the result back to the client device. 
+
+</div>
+
 </body>
 
 <footer id="footer">
